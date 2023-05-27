@@ -1,0 +1,63 @@
+/* Tính Tiền Lương Nhân Viên */
+.luongnv .container{
+    border: 1px solid green;
+}
+.luongnv .container .form-control{
+    width: 50%;
+}
+.luongnv h1{
+    color: green
+}
+
+
+/* Tính Trung Bình 5 Sô Thực */
+.giatritb .container{
+    border: 1px solid red;
+}
+.giatritb .container h1{
+    color: red;
+}
+.giatritb .container .form-control{
+    width: 50%;
+}
+
+/* Quy ĐỔi Tiền Tệ */
+.doiTienTe .container{
+    border: 1px solid blue;
+}
+.doiTienTe .container h1{
+    color: blue;
+}
+.doiTienTe .container .form-control {
+    width: 50%;
+}
+
+/* Tính Chu Vi, Diện Tích Hình Chữ Nhật */
+.hcn .container{
+    border: 1px solid orangered;
+}
+.hcn .container h1{
+    color: orangered;
+}
+.hcn .container .form-control {
+    width: 50%;
+}
+.hcn .btn-primary{
+    background-color: orangered;
+    border-color: orangered;
+}
+
+/* Tính Tổng 2 Ký Số */
+.kySo .container{
+    border: 1px solid violet;
+}
+.kySo .container h1{
+    color: violet;
+}
+.kySo .container .form-control {
+    width: 50%;
+}
+.kySo .btn-primary{
+    background-color: violet;
+    border-color: violet;
+}

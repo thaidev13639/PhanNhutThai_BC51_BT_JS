@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+  <!-- TÍnh Lương Nhân VIên -->
+  <div class="luongnv">
+    <div class="container center py-5 my-5">
+      <h1 class="mb-3">Tính Tiền Lương Nhân Viên</h1>
+      <div class="form-group">
+        <label for="luong1ngay">Lương 1 ngày</label>
+        <input type="number" class="form-control" id="luong1Ngay" placeholder="vd: 50000">
+      </div>
+      <div class="form-group">
+        <label for="songaylam">Số ngày làm</label>
+        <input type="number" class="form-control" id="soNgayLam" placeholder="vd: 5">
+      </div>
+      <button id="btnLuongNV" type="submit" class="btn btn-success center mb-3">Tính Tiền</button>
+      <span id="result" class="py-5"></span>
+      <p>Ghi Chú: </p>
+    </div>
+  </div>
+
+  <!-- Tính Giá Trị Trung Bình -->
+  <div class="giatritb">
+    <div class="container center py-5 my-5">
+      <h1 class=" mb-3">Tính Trung Bình 5 Số Thực</h1>
+      <div class="form-group">
+        <label for="soThuc1">Số Thực 1</label>
+        <input type="number" class="form-control" id="soThuc1" placeholder="vd: 1">
+      </div>
+      <div class="form-group">
+        <label for="soThuc2">Số Thực 2</label>
+        <input type="number" class="form-control" id="soThuc2" placeholder="vd: 2">
+      </div>
+      <div class="form-group">
+        <label for="soThuc3">Số Thực 3</label>
+        <input type="number" class="form-control" id="soThuc3" placeholder="vd: 3">
+      </div>
+      <div class="form-group">
+        <label for="soThuc4">Số Thực 4</label>
+        <input type="number" class="form-control" id="soThuc4" placeholder="vd: 4">
+      </div>
+      <div class="form-group">
+        <label for="soThuc5">Số Thực 5</label>
+        <input type="number" class="form-control" id="soThuc5" placeholder="vd: 5">
+      </div>
+      <button id="btnSoThuc" type="submit" class="btn btn-danger center mb-3">Tính Trung Bình 5 Số</button>
+      <span id="resultTb5So"></span>
+    </div>
+  </div>
+
+  <!-- Quy ĐỔi Tiền Tệ -->
+  <div class="doiTienTe">
+    <div class="container center py-5 my-5">
+      <h1 class="mb-3">Quy Đổi Tiền Tệ</h1>
+      <div class="form-group">
+        <label for="soTienDoi">Số Tiền USD Cần Đổi</label>
+        <input type="number" class="form-control" id="soTienDoi" placeholder="vd: 5 USD">
+      </div>
+      <div class="form-group">
+        <label for="gia1USD">Giá VNĐ/1USD</label>
+        <select id="gia1USD">
+          <option value="23500">23.500 VNĐ</option>
+          <option value="23700">23.700 VNĐ</option>
+          <option value="24000">24.000 VNĐ</option>
+        </select>
+      </div>
+      <button id="btnQuyDoi" type="submit" class="btn btn-primary center mb-3">Tính Tiền</button>
+      <span id="resultQuyDoi" class="py-5"></span>
+    </div>
+  </div>
+
+  <!-- Tính Chi Vi, Diện Tích Hình Chữ NHật -->
+  <div class="hcn">
+    <div class="container center py-5 my-5">
+      <h1 class="mb-3">Tính Chu Vi, Diện Tích Hình Chữ Nhật</h1>
+      <div class="form-group">
+        <label for="chieuDaiHcn">Chiều Dài Hình Chữ Nhật</label>
+        <input type="number" class="form-control" id="chieuDaiHcn" placeholder="vd: 15 cm">
+      </div>
+      <div class="form-group">
+        <label for="chieuRongHcn">Chiều Rộng Hình Chữ Nhật</label>
+        <input type="number" class="form-control" id="chieuRongHcn" placeholder="vd: 5 cm">
+      </div>
+      <button id="btnHcn" type="submit" class="btn btn-primary center mb-3">Tính Chu Vi, Diện Tích</button>
+      <span id="resultHcn" class="py-5"></span>
+    </div>
+  </div>
+
+  <!-- Tính Tổng 2 ký số -->
+  <div class="kySo">
+    <div class="container center py-5 my-5">
+      <h1 class="mb-3">Tính Tổng 2 Ký Số</h1>
+      <div class="form-group">
+        <label for="kySo">Nhập 1 Số Có 2 Chữ Số Bất Kì</label>
+        <input type="number" class="form-control" id="kySo" placeholder="vd: 12 75 66">
+      </div>
+      <button id="btnKySo" type="submit" class="btn btn-primary center mb-3">Tính Tổng 2 Ký Số</button>
+      <span id="resulkySo" class="py-5"></span>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!-- Main JS -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
